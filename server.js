@@ -13,9 +13,13 @@ app.use(express.urlencoded({ extended: true }));
 // --------- routes
 const authRoutes = require('./routes/auth');
 const postRoutes = require('./routes/posts');
+const commentRoutes = require('./routes/comments');
+const moderationRoutes = require('./routes/moderation');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
+app.use('/api/comments', commentRoutes);
+app.use('/api/moderation', moderationRoutes);
 
 // health check
 app.get('/health', (req, res) => {
