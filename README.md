@@ -28,7 +28,7 @@
 
 Prereqs:
 
-* Node.js v18+ (you used v22)
+* Node.js v18+ (used v22)
 * Git
 * A MongoDB instance — (recommended: MongoDB Atlas free tier)
 
@@ -449,6 +449,7 @@ Invoke-RestMethod -Uri "http://localhost:4000/api/moderation/comment/<COMMENT_ID
 * Run `npm test` before PR.
 
 ---
+
 
 
 
